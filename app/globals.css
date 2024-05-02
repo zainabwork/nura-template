@@ -1,33 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    background-color: #171717;
+}
+#button{
+    padding: 5px 20px;
+    border-radius:2rem;
+    color:black;
+    background-color: white;
+    display:flex;
+}
+#button_featured{
+    padding: 5px 10px;
+    border-radius:2rem;
+    color:white;
+    font-size: 12px;
+    display:flex;
+    background-color: #3333F5;
+}
+#button_learnmore{
+    padding: 5px 20px;
+    border-radius:2rem;
+    color:white;
+    display:flex;
+    border:white solid 1px;
+}
+#button_discover{
+    padding: 5px 20px;
+    border-radius:2rem;
+    color:white;
+    display:flex;
+    background-color: #3333F5;
+}
+.card_style{
+    display:flex;
+    gap:2rem;
+    width: 100%;
+    flex: wrap;
+}
+.bg_blue_color{
+    background: linear-gradient(114.68deg, #3333F5 27.1%, #3381F5 66.15%, #3381F5 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.nav_wrapper {
+    display: flex;
+    gap:2rem;
+    /* justify-content: space-between; */
+    width: 100vw;
+    align-items: center;
+    max-width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /* transition: background 0.3s ease !important; */
+    /* opacity: 0.9; */
+    padding: 15px;
+    height: 70px;
+    z-index: 10000;
+    color:white;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .bg_nav {
+    /* transition: 1s !important; */
+    background: linear-gradient(114.68deg, #3333F5 27.1%, #3381F5 66.15%, #3381F5 100%);
   }
-}
+  .bg_none {
+    /* transition: 1s !important; */
+    background: none !important;
+  }
+  .side_bar {
+    margin: 0px auto;
+    background: linear-gradient(114.68deg, #3333F5 27.1%, #3381F5 66.15%, #3381F5 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100 !important;
+    position: fixed;
+    top: 90px;
+    right: 0%;
+    height: calc(100vh - 70px);
+    opacity: 0.9;
+  }
+  .list-item-with-slash::after {
+    content: "/";
+    color: gray; /* Adjust color as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
+  .list-item-with-slash {
+    position: relative; /* Needed for proper ::after placement */
+  }
