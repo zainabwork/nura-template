@@ -39,7 +39,7 @@ export default function Home() {
     <>
       <div className='relative h-screen pb-10 bg-cover w-full'>
       <Image src={banner} alt="Banner description" layout="fill" objectFit="cover" />
-      <div className='absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent opacity-70'></div>
+      <div className='absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black to-transparent opacity-90'></div>
 
       {/* hero section starts here */}
       <section className='m-auto'>
@@ -58,7 +58,7 @@ export default function Home() {
       <h1 className="text-white text-4xl font-spaceGrotesk">Featured discounts</h1>
       <p className="flex text-[#7DFB5D] text-sm">VIEW ALL DISCOUNTS<FaArrowRight className="mt-1 ml-2 text-sm"/></p>
       </div>
-      <div className="my-5 card_style ">
+      <div className="my-5 card_style w-full">
       {featured.map((featured) => (
         <FeaturedCard key={Math.random()} featured={featured} />
       ))}
@@ -68,11 +68,11 @@ export default function Home() {
       
       {/* mobile section */}
       <section className="bg_blue_color h-auto py-10">
-          <div className="flex">
-            <div className="w-1/2 h-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-1 ">
+            <div className=" h-auto">
               <Image src={mobile} alt="mobile image"></Image>
             </div>
-            <div className="mt-32 w-1/2 p-4">
+            <div className="mt-32 p-4">
               <p className="text-8xl font-spaceGrotesk text-white">For your ears only.</p>
               <p className="my-10 font-spaceGrotesk text-white text-2xl">Normal hearing varies significantly from person to person, and these variations make a <span className="text-[#7DFB5D]">big difference</span> to how you experience music.</p>
               <p className="my-10 font-spaceGrotesk text-white text-2xl">The first time you use Nura earbuds, they <span className="text-[#7DFB5D]">measure your hearing</span> to create your personalised hearing profile.</p>

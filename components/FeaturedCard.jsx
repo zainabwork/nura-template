@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const FeaturedCard = (props) => {
   return (
     <>
-    <section className="my-5 bg-white rounded-2xl w-full relative pb-16 flex flex-col items-center">
+    <section className="my-5 bg-[#E5E5E5] rounded-2xl w-[18rem] relative pb-16 flex flex-col items-center">
     {/* <div className=" w-full h-[10rem] border border-red-500"> */}
         <Image src={props?.featured?.image} alt="featured image" className=""></Image>
     {/* </div> */}

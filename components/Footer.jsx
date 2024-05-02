@@ -7,11 +7,11 @@ const Footer = () => {
         <div className="flex justify-between">
         <div>
         <ul className="flex gap-5 text-white text-sm">
-            <li class="list-item-with-slash cursor-pointer">HOME</li>
-            <li class="list-item-with-slash cursor-pointer">PROCESS</li>
-            <li class="list-item-with-slash cursor-pointer">WORK</li>
-            <li class="list-item-with-slash cursor-pointer">FAQS</li>
-            <li class="list-item-with-slash cursor-pointer">ABOUT US</li>
+            <li className="list-item-with-slash cursor-pointer">HOME</li>
+            <li className="list-item-with-slash cursor-pointer">PROCESS</li>
+            <li className="list-item-with-slash cursor-pointer">WORK</li>
+            <li className="list-item-with-slash cursor-pointer">FAQS</li>
+            <li className="list-item-with-slash cursor-pointer">ABOUT US</li>
             <li className="cursor-pointer">PRIVACY</li>
         </ul>
         <div className="text-white my-5 text-sm font-spaceGrotesk">

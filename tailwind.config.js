@@ -23,9 +23,6 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
-      myClasses: {
-        button_Hero: "text-white",
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

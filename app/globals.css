@@ -38,11 +38,13 @@ body{
     background-color: #3333F5;
 }
 .card_style{
-    display:flex;
-    gap:2rem;
-    width: 100%;
-    flex: wrap;
+  display:flex;
+  flex-wrap: wrap;
+  gap:2rem;
+  width: 100%;
+  justify-content: center;
 }
+
 .bg_blue_color{
     background: linear-gradient(114.68deg, #3333F5 27.1%, #3381F5 66.15%, #3381F5 100%);
 }
