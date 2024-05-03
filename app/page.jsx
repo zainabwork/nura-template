@@ -38,12 +38,12 @@ export default function Home() {
   return (
     <>
       <div className='relative h-screen pb-10 bg-cover w-full'>
-      <Image src={banner} alt="Banner description" layout="fill" objectFit="cover" />
+      <Image src={banner} alt="banner image" layout="fill" objectFit="cover" />
       <div className='absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black to-transparent opacity-90'></div>
 
       {/* hero section starts here */}
-      <section className='m-auto'>
-      <div className='flex flex-col justify-center items-center h-auto relative mx-auto  overflow-hidden pt-80'>
+      <section className='m-auto h-full relative '>
+      <div className='flex flex-col justify-center items-center h-auto absolute left-0 right-0 overflow-hidden  bottom-40'>
         <p className="font-baiJamjuree text-white text-2xl">OUR BIGGEST SALE LIVE NOW</p>
         <p className=" font-spaceGrotesk text-white text-6xl font-bold py-4">Black Friday Starts Now!</p>
         <button id="button">SHOP SALE NOW <FaArrowRight className="m-auto text-xl ml-2"/></button>
@@ -87,16 +87,16 @@ export default function Home() {
       <Image src={banner2} alt="Banner description" layout="fill" objectFit="cover" />
       <div className='absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent opacity-70'></div>
 
-      {/* hero section starts here */}
-      <section className='m-auto'>
-      <div className='text-center pt-40 w-1/2 flex flex-col justify-center items-center h-auto relative mx-auto overflow-hidden'>
+      {/* sound subscription section starts here */}
+      <section className='m-auto relative h-full'>
+      <div className='text-center  w-1/2 md:w-full md:px-2 flex flex-col justify-center items-center h-auto absolute m-auto left-0 right-0 top-0 bottom-0 overflow-hidden'>
         <p className="font-spaceGrotesk text-white text-6xl">A sound subscription</p>
-        <p className=" font-spaceGrotesk text-white text-2xl py-4">Experience personalised sound across our devices on a low monthly fee with NuraNow. Cancel anytime.
+        <p className="font-spaceGrotesk text-white text-2xl py-4">Experience personalised sound across our devices on a low monthly fee with NuraNow. Cancel anytime.
 </p>
         <button id="button_discover" className="my-5">DISCOVER NURANOW <FaArrowRight className="m-auto text-xl ml-2"/></button>
       </div>
       </section>
-      {/* hero section ends here */}
+      {/* sound subscription section ends here */}
     </div>
       </section>
     </>

@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <>
     <footer className="p-10 pt-20 bg-black font-spaceGrotesk">
-        <div className="flex justify-between">
+        <div className="flex justify-between md:flex-col">
         <div>
-        <ul className="flex gap-5 text-white text-sm">
+        <ul className="flex flex-wrap gap-5 text-white text-sm sm:text-xs">
             <li className="list-item-with-slash cursor-pointer">HOME</li>
             <li className="list-item-with-slash cursor-pointer">PROCESS</li>
             <li className="list-item-with-slash cursor-pointer">WORK</li>
@@ -15,8 +15,8 @@ const Footer = () => {
             <li className="cursor-pointer">PRIVACY</li>
         </ul>
         <div className="text-white my-5 text-sm font-spaceGrotesk">
-        <p>© 2021 SVZ Design, All Rights Reserved</p>
-        <p>San Francisco - Los Angeles - Seattle</p>
+        <p className="sm:text-xs">© 2021 SVZ Design, All Rights Reserved</p>
+        <p className="sm:text-xs">San Francisco - Los Angeles - Seattle</p>
         </div>
         </div>
         <div className="cursor-pointer"><Image src={linkedinIcon}></Image></div>
