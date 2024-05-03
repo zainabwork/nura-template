@@ -88,6 +88,11 @@ body{
     height: calc(100vh - 70px);
     opacity: 0.9;
   }
+  @media screen and (min-width: 1020px) {
+    .side_bar {
+      display: none !important;
+    }
+  }
   .list-item-with-slash::after {
     content: "/";
     color: gray; /* Adjust color as needed */

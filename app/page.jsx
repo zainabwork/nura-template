@@ -43,9 +43,9 @@ export default function Home() {
 
       {/* hero section starts here */}
       <section className='m-auto h-full relative '>
-      <div className='flex flex-col justify-center items-center h-auto absolute left-0 right-0 overflow-hidden  bottom-40'>
-        <p className="font-baiJamjuree text-white text-2xl">OUR BIGGEST SALE LIVE NOW</p>
-        <p className=" font-spaceGrotesk text-white text-6xl font-bold py-4">Black Friday Starts Now!</p>
+      <div className='text-center flex flex-col justify-center items-center h-auto absolute left-0 right-0 overflow-hidden  bottom-40'>
+        <p className="font-baiJamjuree text-white text-2xl md:text-xl">OUR BIGGEST SALE LIVE NOW</p>
+        <p className=" font-spaceGrotesk text-white text-6xl font-bold py-4 md:text-3xl">Black Friday Starts Now!</p>
         <button id="button">SHOP SALE NOW <FaArrowRight className="m-auto text-xl ml-2"/></button>
       </div>
       </section>
@@ -54,9 +54,9 @@ export default function Home() {
 
     {/* featutred section starts here*/}
     <section className="m-10">
-      <div className="flex justify-between items-center">
-      <h1 className="text-white text-4xl font-spaceGrotesk">Featured discounts</h1>
-      <p className="flex text-[#7DFB5D] text-sm">VIEW ALL DISCOUNTS<FaArrowRight className="mt-1 ml-2 text-sm"/></p>
+      <div className="flex flex-wrap justify-between items-center">
+      <h1 className="text-white text-4xl font-spaceGrotesk md:text-xl">Featured discounts</h1>
+      <p className="flex text-[#7DFB5D] text-sm md:mt-2 md:text-xs">VIEW ALL DISCOUNTS<FaArrowRight className="mt-1 ml-2 text-sm"/></p>
       </div>
       <div className="my-5 card_style w-full">
       {featured.map((featured) => (
@@ -69,13 +69,13 @@ export default function Home() {
       {/* mobile section */}
       <section className="bg_blue_color h-auto py-10">
           <div className="grid grid-cols-2 lg:grid-cols-1 ">
-            <div className=" h-auto">
+            <div className="m-auto h-auto">
               <Image src={mobile} alt="mobile image"></Image>
             </div>
-            <div className="mt-32 p-4">
-              <p className="text-8xl font-spaceGrotesk text-white">For your ears only.</p>
-              <p className="my-10 font-spaceGrotesk text-white text-2xl">Normal hearing varies significantly from person to person, and these variations make a <span className="text-[#7DFB5D]">big difference</span> to how you experience music.</p>
-              <p className="my-10 font-spaceGrotesk text-white text-2xl">The first time you use Nura earbuds, they <span className="text-[#7DFB5D]">measure your hearing</span> to create your personalised hearing profile.</p>
+            <div className="mt-32 lg:mt-16 p-4 mr-10 lg:ml-10">
+              <p className="text-8xl font-spaceGrotesk text-white md:text-6xl sm:text-3xl">For your ears only.</p>
+              <p className="my-10 font-spaceGrotesk text-white text-2xl md:text-xl sm:text-sm">Normal hearing varies significantly from person to person, and these variations make a <span className="text-[#7DFB5D]">big difference</span> to how you experience music.</p>
+              <p className="my-10 font-spaceGrotesk text-white text-2xl md:text-xl sm:text-sm">The first time you use Nura earbuds, they <span className="text-[#7DFB5D]">measure your hearing</span> to create your personalised hearing profile.</p>
               <button id="button_learnmore">Learn More <FaArrowRight className="m-auto text-xl ml-2"/></button>
             </div>
           </div>
@@ -90,8 +90,8 @@ export default function Home() {
       {/* sound subscription section starts here */}
       <section className='m-auto relative h-full'>
       <div className='text-center  w-1/2 md:w-full md:px-2 flex flex-col justify-center items-center h-auto absolute m-auto left-0 right-0 top-0 bottom-0 overflow-hidden'>
-        <p className="font-spaceGrotesk text-white text-6xl">A sound subscription</p>
-        <p className="font-spaceGrotesk text-white text-2xl py-4">Experience personalised sound across our devices on a low monthly fee with NuraNow. Cancel anytime.
+        <p className="font-spaceGrotesk text-white text-6xl md:text-3xl">A sound subscription</p>
+        <p className="font-spaceGrotesk text-white text-2xl md:text-xl py-4">Experience personalised sound across our devices on a low monthly fee with NuraNow. Cancel anytime.
 </p>
         <button id="button_discover" className="my-5">DISCOVER NURANOW <FaArrowRight className="m-auto text-xl ml-2"/></button>
       </div>

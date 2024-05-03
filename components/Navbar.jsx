@@ -64,7 +64,7 @@ const Navbar = () => {
 function Text(){
   return(
       <>
-        <div className='side_bar 2xl:hidden lg:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
+        <div className='side_bar lg:block bg-black text-white top-20 right-0 absolute p-5 h-auto w-1/3 md:w-1/2 sm:w-[80%] z-50 rounded-lg'>
         <div>
         <ul className=''>
                 <li className='py-2'>Products</li>
